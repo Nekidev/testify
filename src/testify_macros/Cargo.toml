@@ -6,9 +6,10 @@ edition = "2024"
 license = "MIT"
 homepage = "https://github.com/Nekidev/testify"
 authors = ["Rafael Bradley"]
+readme = "../../README.md"
 
 [dependencies]
-testify_core = { version = "*", path = "../testify_core" }
+testify_core = { version = "0.1.2"}
 ctor = "0.4.2"
 once_cell = "1.21.3"
 proc-macro2 = "1.0.95"

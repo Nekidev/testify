@@ -5,6 +5,7 @@ version = "0.1.2"
 edition = "2024"
 license = "MIT"
 homepage = "https://github.com/Nekidev/testify"
+readme = "../../README.md"
 authors = ["Rafael Bradley"]
 
 [dependencies]

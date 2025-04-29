@@ -31,5 +31,32 @@ fn test_hello_world_failure() -> Result<(), String> {
 #[testify::setup]
 async fn setup() {}
 
+// #[testify::group(tags = ["one", "two", "three"], in_order)]
+// mod tests {
+//     #[testify::setup]
+//     async fn setup() {}
+
+//     #[testify::test(in_order, name = "My Test")]
+//     mod my_test {
+//         #[testify::setup]
+//         async fn setup() {}
+
+//         #[testify::case(name = "Success")]
+//         async fn success() {}
+
+//         #[testify::case(name = "Failure", should_fail)]
+//         async fn failure() {}
+
+//         #[testify::cleanup]
+//         async fn cleanup() {}
+//     }
+
+//     #[testify::test(should_panic)]
+//     async fn my_test() {}
+
+//     #[testify::cleanup]
+//     async fn cleanup() {}
+// }
+
 #[testify::cleanup]
 async fn cleanup() {}

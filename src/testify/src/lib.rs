@@ -3,9 +3,9 @@
 //! 
 //! # Setup
 //! 
-//! To set up the testify test suite, you'll need to add `testify` to your project's dependencies,
-//! and to install `testify` via `cargo install testify`. The last one will only set up the
-//! `cargo testify` command, which you'll use to run your tests from now on.
+//! To set up the testify test suite, you'll need to add `testify-rs` to your project's
+//! dependencies, and to install `testify` via `cargo install testify-rs`. The last one will only
+//! set up the `cargo testify` command, which you'll use to run your tests from now on.
 //! 
 //! ## Features
 //! 
@@ -151,7 +151,7 @@
 //! 
 //! Tests are run using the testify command `cargo testify`. It's a command line tool that allows
 //! you to configure the way in which your tests are run. In case you haven't installed it yet, run
-//! `cargo install testify` to set it up.
+//! `cargo install testify-rs` to set it up.
 //! 
 //! ```
 //! $ cargo testify --help
@@ -180,8 +180,8 @@
 //! You can also exclude tags by passing the `--exclude-tag` argument:
 //! 
 //! ```
-//! $ cargo testify --exclude-tag db
 //! // -e for the shortcut
+//! $ cargo testify --exclude-tag db
 //! ```
 //! 
 //! ### Fast Failing
@@ -189,6 +189,17 @@
 //! If you only care about whether all tests pass or not, you can pass the `--fail-fast` argument.
 //! This'll stop testing on the first test that fails. You'll see a `Failed! Aborted.` next to the
 //! failing test, in case there's any.
+//! 
+//! ### Passing Arguments to `cargo run`
+//! 
+//! `cargo testify` is only a wrapper for `cargo run` that sets up the configurations for testify
+//! to run in your project's binary. Any arguments passed after `--` when running `cargo testify`
+//! will be passed to cargo. For example:
+//! 
+//! ```
+//! // To run `cargo run` in release mode
+//! $ cargo testify -- --release
+//! ```
 
 #[doc(hidden)]
 pub use testify_core::*;
