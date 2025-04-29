@@ -1,0 +1,3 @@
+[workspace]
+members = [ "src/example","src/testify", "src/testify_core", "src/testify_macros"]
+resolver = "3"

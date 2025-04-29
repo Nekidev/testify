@@ -1,0 +1,19 @@
+[package]
+name = "testify_core"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+homepage = "https://github.com/Nekidev/testify"
+authors = ["Rafael Bradley"]
+
+[dependencies]
+colored = "3.0.0"
+glob = "0.3.2"
+once_cell = { version = "1.21.3", optional = true }
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+tokio = { version = "1.44.2", features = ["rt-multi-thread"], optional = true }
+
+[features]
+default = []
+async-tokio = ["tokio", "once_cell"]

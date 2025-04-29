@@ -1,0 +1,22 @@
+[package]
+name = "testify_macros"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+homepage = "https://github.com/Nekidev/testify"
+authors = ["Rafael Bradley"]
+
+[dependencies]
+testify_core = { path = "../testify_core" }
+ctor = "0.4.2"
+once_cell = "1.21.3"
+proc-macro2 = "1.0.95"
+quote = "1.0.40"
+syn = { version = "2.0.101", features = ["full"] }
+
+[features]
+default = []
+async-tokio = ["testify_core/async-tokio"]
+
+[lib]
+proc-macro = true

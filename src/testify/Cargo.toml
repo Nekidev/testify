@@ -1,0 +1,24 @@
+[package]
+name = "testify"
+description = "An enhanced testing suite for Rust."
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+homepage = "https://github.com/Nekidev/testify"
+authors = ["Rafael Bradley"]
+
+[dependencies]
+clap = { version = "4.5.37", features = ["derive"] }
+ctor = "0.4.2"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+testify_core = { path = "../testify_core" }
+testify_macros = { path = "../testify_macros" }
+
+[[bin]]
+name = "cargo-testify"
+path = "src/bin/cargo-testify.rs"
+
+[features]
+default = []
+async-tokio = ["testify_core/async-tokio", "testify_macros/async-tokio"]
