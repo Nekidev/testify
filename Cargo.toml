@@ -6,3 +6,4 @@ resolver = "3"
 shared-version = true
 publish = true
 tag = true
+pre-release-commit-message = "chore: 🔖 Bump version to {{version}}."
