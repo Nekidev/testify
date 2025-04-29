@@ -341,27 +341,13 @@ dependencies = [
  "ctor",
  "serde",
  "serde_json",
- "testify_core 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "testify_macros 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "testify_core",
+ "testify_macros",
 ]
 
 [[package]]
 name = "testify_core"
 version = "0.1.2"
-dependencies = [
- "colored",
- "glob",
- "once_cell",
- "serde",
- "serde_json",
- "tokio",
-]
-
-[[package]]
-name = "testify_core"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7099aec432649a523fd27515fda5b61e41be630f630dea741517cd5fe17afec4"
 dependencies = [
  "colored",
  "glob",
@@ -380,21 +366,7 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
- "testify_core 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "testify_macros"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d000d43d140de624be8232573bca89ab35c4ab40cf154f2a0e3a777988a786da"
-dependencies = [
- "ctor",
- "once_cell",
- "proc-macro2",
- "quote",
- "syn",
- "testify_core 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "testify_core",
 ]
 
 [[package]]

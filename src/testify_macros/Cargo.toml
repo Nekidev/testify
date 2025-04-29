@@ -9,7 +9,7 @@ authors = ["Rafael Bradley"]
 readme = "../../README.md"
 
 [dependencies]
-testify_core = { version = "0.1.2"}
+testify_core = { version = "*", path = "../testify_core" }
 ctor = "0.4.2"
 once_cell = "1.21.3"
 proc-macro2 = "1.0.95"
