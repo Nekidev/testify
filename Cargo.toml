@@ -1,5 +1,5 @@
 [workspace]
-members = [ "src/example","src/testify", "src/testify_core", "src/testify_macros"]
+members = [ "src/example","src/testify_rs", "src/testify_core", "src/testify_macros"]
 resolver = "3"
 
 [workspace.metadata.release]
@@ -7,3 +7,8 @@ shared-version = true
 publish = true
 tag = true
 pre-release-commit-message = "chore: 🔖 Bump version to {{version}}."
+
+[workspace.dependencies]
+testify-rs ={ version = "*", path = "src/testify_rs" }
+testify-core = { version = "*", path = "src/testify_core" }
+testify-macros = { version = "*", path = "src/testify_macros" }

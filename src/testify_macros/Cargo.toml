@@ -1,7 +1,7 @@
 [package]
-name = "testify_macros"
+name = "testify-macros"
 description = "Macros for the testify framework, providing compile-time utilities and enhancements."
-version = "0.1.3"
+version = "0.1.4"
 edition = "2024"
 license = "MIT"
 homepage = "https://github.com/Nekidev/testify"
@@ -9,7 +9,7 @@ authors = ["Rafael Bradley"]
 readme = "../../README.md"
 
 [dependencies]
-testify_core = { version = "*", path = "../testify_core" }
+testify-core = { workspace = true }
 ctor = "0.4.2"
 once_cell = "1.21.3"
 proc-macro2 = "1.0.95"
@@ -18,7 +18,7 @@ syn = { version = "2.0.101", features = ["full"] }
 
 [features]
 default = []
-async-tokio = ["testify_core/async-tokio"]
+async-tokio = ["testify-core/async-tokio"]
 
 [lib]
 proc-macro = true

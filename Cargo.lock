@@ -334,20 +334,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "testify-rs"
-version = "0.1.3"
-dependencies = [
- "clap",
- "ctor",
- "serde",
- "serde_json",
- "testify_core",
- "testify_macros",
-]
-
-[[package]]
-name = "testify_core"
-version = "0.1.3"
+name = "testify-core"
+version = "0.1.4"
 dependencies = [
  "colored",
  "glob",
@@ -358,15 +346,27 @@ dependencies = [
 ]
 
 [[package]]
-name = "testify_macros"
-version = "0.1.3"
+name = "testify-macros"
+version = "0.1.4"
 dependencies = [
  "ctor",
  "once_cell",
  "proc-macro2",
  "quote",
  "syn",
- "testify_core",
+ "testify-core",
+]
+
+[[package]]
+name = "testify-rs"
+version = "0.1.4"
+dependencies = [
+ "clap",
+ "ctor",
+ "serde",
+ "serde_json",
+ "testify-core",
+ "testify-macros",
 ]
 
 [[package]]
