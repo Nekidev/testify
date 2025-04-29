@@ -10,5 +10,5 @@ pre-release-commit-message = "chore: 🔖 Bump version to {{version}}."
 
 [workspace.dependencies]
 testify-rs ={ version = "*", path = "src/testify_rs" }
-testify-core = { version = "*", path = "src/testify_core" }
-testify-macros = { version = "*", path = "src/testify_macros" }
+testify_core = { version = "*", path = "src/testify_core" }
+testify_macros = { version = "*", path = "src/testify_macros" }
